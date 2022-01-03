@@ -11,12 +11,18 @@ addTask.addEventListener("click", (newTask) => {
   } else {
     const li = document.createElement("li");
     const p = document.createElement("p");
-
+    const closeButton = document.createElement("button");
     p.innerHTML = task;
-    li.appendChild(p);
+    closeButton.innerHTML = "X";
+    closeButton.className = "btn-delete";
     ul.appendChild(li);
+    li.appendChild(p);
+    li.appendChild(closeButton);
     empty.style.display = "none";
     inputTask.value = "";
+    closeButton.addEventListener("click", () => {
+      li.remove();
+    });
   }
   newTask.preventDefault();
 });

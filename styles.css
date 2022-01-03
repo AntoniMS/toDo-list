@@ -2,8 +2,8 @@ body {
     margin: 0;
     padding: 0;
     font-size: 18px;
-    font-family: Arial, Helvetica, sans-serif;
-    line-height: 1.8;
+    font-family:Heebo, Kanit;
+    line-height: 1.9;
     background-color: rgb(199, 199, 199);
     color: whitesmoke;
 }
@@ -45,7 +45,7 @@ h1 {
   .li-container {
     background-color: whitesmoke;
     width: 100%;
-    color: darkslategray;
+    color: rgb(35, 72, 73);
     margin-top: 20px;
   }
   
@@ -54,6 +54,7 @@ h1 {
   }
   
   li {
+
     list-style: none;
     background-color: lightgray;
     border-radius: 10px;
@@ -69,9 +70,10 @@ h1 {
   }
   
   .btn-delete {
+    font-family: Kanit;
     margin-left: auto;
     border: none;
-    background-color: #e31746;
+    background-color: #d6254e;
     color: white;
     font-weight: bold;
     padding: 5px 10px;
@@ -84,16 +86,17 @@ h1 {
   
   .btn-delete:hover {
     cursor: pointer;
-    background-color: lightseagreen;
+    background-color: rgb(238, 97, 97);
   }
   
   .btn-add {
     padding: 5px 15px;
     border: none;
+    border-radius: 3px;
     color: white;
-    font-family: fantasy;
+    font-family: Arial, Helvetica, sans-serif;
     background-color: teal;
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     outline: none;
     
   }
@@ -104,5 +107,6 @@ h1 {
   }
   
   .empty {
+    font-family: Kanit;
     color: darkslategrey;
   }
